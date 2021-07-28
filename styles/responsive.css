@@ -20,12 +20,14 @@
         right: 0;
     }
     .fa-twitter {
-        right: 155px;
+        /* right: 155px; */
+        right: 220px;
         bottom: 90px;
         top: unset;
     }
     .fa-facebook {
-        right: 100px;
+        /* right: 100px; */
+        right: 150px;
         bottom: 90px;
         top: unset;
     }
@@ -69,7 +71,7 @@
         justify-content: center;
         align-items: flex-start;
         height: unset;
-        background-color: white;
+        background-color: var(--back-blue);
         border-radius: 2px;
         top: 10px;
         left: 10px;

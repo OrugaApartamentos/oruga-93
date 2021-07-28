@@ -36,7 +36,7 @@
 
     <div class="loading" id="loading">
         <div class="d-flex flex-column text-center">
-            <img src="./assets/Logo Oruga 93.jpg" alt="Logo">
+            <img src="./assets/Logo Oruga 93 sin fondo.png" alt="Logo">
             <div>
                 <div class="spinner-grow text-custom-primary"></div>
                 <div class="spinner-grow text-custom-primary"></div>
@@ -107,7 +107,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
         <div id="banners">
             <!-- Top -->
             <div class="top-banner">
-                <img src="assets/Logo Oruga 93.jpg" alt="builder" id="builder-image">
+                <img src="assets/Logo Oruga 93 sin fondo.png" alt="builder" id="builder-image">
                 <!-- Urbanization Information -->
                 <div id="urbanization-information" class="urbanization-information">
                     <p id="title" class="w-100">ORUGA</p>
@@ -135,7 +135,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
 
         <!-- MOBILE -->
         <div class="mobile-urbanization-image" id="container-mobile-urbanization-image">
-            <img src="assets/ICONO LOGO ORUGA.svg" alt="urbanization" id="mobile-urbanization-image">
+            <img src="assets/Logo Oruga 93 sin fondo.png" alt="urbanization" id="mobile-urbanization-image">
             <div id="urbanization-information" class="urbanization-information">
                 <p id="title" class="w-100">ORUGA</p>
                 <p class="m-0 text-center" id="subtitle">VIVIENDA EN <br> EVOLUCIÓN</p>
@@ -194,8 +194,8 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNTEyIiB2aWV3Qm94
             </div>
             <!-- Landing button -->
             <div class="action-button-container" id="landing-button-container">
-                <a id="landing-button" class="action-button" href="http://93.orugaapartamentos.com.co" target="_blank"
-                    style="background-image: url(assets/boton-formulario.png); background-repeat: round;">
+                <a id="landing-button" class="landing-button action-button" href="http://93.orugaapartamentos.com.co"
+                    target="_blank">
                 </a>
                 <div class="message" id="oruga-message">Oruga93</div>
             </div>
@@ -306,7 +306,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
                 <div class="modal-header border-0">
                     <a type="button" class="close text-white font-weight-bold" data-dismiss="modal">×</a>
                 </div>
-                <img alt="Image" id="image-modal-img" style="height: 100%; object-fit: contain;">
+                <img alt="Image" id="image-modal-img" style="max-height: 90%; object-fit: scale-down;">
             </div>
         </div>
     </div>
@@ -379,6 +379,18 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
                                     <input class="form-check-input" type="checkbox" id="accept" required>
                                     Autorizo que Aprix construcciones me envíe información y/o contacte
                                 </label>
+                                <p class="small mt-3">
+                                    Esta es una representación gráfica, el contenido de estos planos está sujeto a
+                                    mordicaciones.
+                                    <a href="#" id="mas" onclick="vermas('mas');">... [leer más]</a>
+                                    <span id="desplegar" style="display: none;">
+                                        Las dimensiones podrán sufrir modificaciones menores por ajustes en
+                                        los procesos de diseño y construcción. Las áreas construidas o privadas
+                                        ofrecidas al
+                                        propietario en sala de ventas o en la información de separación y contratos de
+                                        vinculación, son las áreas calculadas en los planos de diseño.
+                                    </span>
+                                </p>
                             </div>
                             <div class="px-5 mt-3 col-12">
                                 <button type="button" onclick="sendContact()"

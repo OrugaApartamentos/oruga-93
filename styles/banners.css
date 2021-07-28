@@ -118,7 +118,7 @@
     background-size: cover;
     background-repeat: round;
     border-radius: 1px;
-    background-color: #ffff;
+    background-color: var(--back-blue);
     display: flex;
     align-items: flex-start;
     padding-left: 25px;

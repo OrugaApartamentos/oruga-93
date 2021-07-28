@@ -123,7 +123,7 @@ function createViewer() {
             createTooltipFunc: hotspot,
             createTooltipArgs: "Apartamento 2",
             clickHandlerFunc: openImageModal,
-            clickHandlerArgs: './assets/gallery/modelo-apartamento-2.jpg'
+            clickHandlerArgs: './assets/gallery/apartamento-tipo.jpg'
           },
           {
             yaw: 256,
@@ -181,7 +181,7 @@ function createViewer() {
             createTooltipFunc: hotspot,
             createTooltipArgs: "Plano segundo piso",
             clickHandlerFunc: openImageModal,
-            clickHandlerArgs: './assets/gallery/planta-segundo-piso.jpg'
+            clickHandlerArgs: './assets/gallery/planta-primer-piso.jpg'
           },
           {
             yaw: 152.5,
@@ -588,39 +588,39 @@ function createViewer() {
         ]
       },
       'PASILLO': {
-          hfov,
-          yaw: 121,
-          type: 'multires',
-          multiRes: {
-              basePath: './assets/multires/apartamento2',
-              path: '/%l/%s%y_%x',
-              fallbackPath: './assets/multires/apartamento2/fallback/%s',
-              extension: 'jpg',
-              tileResolution: 512,
-              maxLevel: 4,
-              cubeResolution: 3192
+        hfov,
+        yaw: 121,
+        type: 'multires',
+        multiRes: {
+          basePath: './assets/multires/apartamento2',
+          path: '/%l/%s%y_%x',
+          fallbackPath: './assets/multires/apartamento2/fallback/%s',
+          extension: 'jpg',
+          tileResolution: 512,
+          maxLevel: 4,
+          cubeResolution: 3192
+        },
+        blueprint: imageNames.miniApartment.blueprint,
+        gap: 0,
+        hotSpots: [
+          {
+            yaw: -13,
+            type: 'scene',
+            sceneId: imageNames.miniApartment.name,
+            cssClass: "custom-hotspot",
+            createTooltipFunc: hotspot,
+            createTooltipArgs: imageNames.miniApartment.name
           },
-          blueprint: imageNames.miniApartment.blueprint,
-          gap: 0,
-          hotSpots: [
-              {
-                  yaw: -13,
-                  type: 'scene',
-                  sceneId: imageNames.miniApartment.name,
-                  cssClass: "custom-hotspot",
-                  createTooltipFunc: hotspot,
-                  createTooltipArgs: imageNames.miniApartment.name
-              },
-              {
-                  yaw: 160,
-                  type: 'scene',
-                  sceneId: 'SALA DE VENTAS 2',
-                  cssClass: "custom-hotspot",
-                  createTooltipFunc: hotspot,
-                  createTooltipArgs: imageNames.salesRoom.name,
-                  targetYaw: 76
-              }
-          ]
+          {
+            yaw: 160,
+            type: 'scene',
+            sceneId: 'SALA DE VENTAS 2',
+            cssClass: "custom-hotspot",
+            createTooltipFunc: hotspot,
+            createTooltipArgs: imageNames.salesRoom.name,
+            targetYaw: 76
+          }
+        ]
       },
       'VISTA AEREA': {
         hfov,
@@ -1019,9 +1019,9 @@ function showInstructionsModal() {
 }
 
 $('#information-modal').modal({});
-$('#information-modal').on('hidden.bs.modal', function (event) {
-  showInstructionsModal();
-});
+// $('#information-modal').on('hidden.bs.modal', function (event) {
+//   showInstructionsModal();
+// });
 
 createViewer();
 createScreenList();
@@ -1174,3 +1174,14 @@ var validation = Array.prototype.filter.call(forms, function (form) {
     form.classList.add('was-validated');
   }, false);
 });
+
+function vermas(id) {
+  if (id == "mas") {
+    document.getElementById("desplegar").style.display = "block";
+    document.getElementById("mas").style.display = "none";
+  }
+  else {
+    document.getElementById("desplegar").style.display = "none";
+    document.getElementById("mas").style.display = "inline";
+  }
+}
