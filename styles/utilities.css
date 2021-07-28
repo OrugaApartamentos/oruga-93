@@ -1,0 +1,60 @@
+.absolute {
+    position: absolute;
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.loading {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1051;
+    transition: 500ms ease 100ms;
+}
+.loading img {
+    height: 100px;
+    margin-bottom: 1rem;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex !important;
+    justify-content: center;
+    max-height: 80vh;
+}
+.carousel-item img {
+    object-fit: contain;
+}
+.close {
+    font-size: xx-large !important;
+}
+
+.text-custom-primary {
+    color: var(--color-primary);
+}
+
+.btn-custom-primary {
+    color: var(--contrast-color) !important;
+    background-color: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+}
+.btn-custom-primary:hover,
+.btn-custom-primary:focus,
+.btn-custom-primary:active {
+    color: var(--contrast-color) !important;
+    background-color: darken(#ffd76e, 10%) !important;
+    border-color: darken(#ffd76e, 20%) !important;
+}

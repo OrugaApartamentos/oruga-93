@@ -1,0 +1,20 @@
+#room {
+    right: 113px;
+    top: 95px;
+}
+#aisle {
+    right: 62px;
+    top: 120px;
+}
+#mainRoom {
+    right: 191px;
+    top: 140px;
+}
+#Kitchen {
+    right: 166px;
+    top: 88px;
+}
+#auxiliaryRoom {
+    right: 94px;
+    top: 175px;
+}

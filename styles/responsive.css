@@ -1,0 +1,86 @@
+@media only screen and (max-width: 600px) {
+    .controls {
+        display: none;
+    }
+    #banners {
+        display: none;
+    }
+    #mobile-select-screens {
+        display: block;
+    }
+    .action-buttons {
+        bottom: 0;
+        left: 0;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        align-items: center;
+        justify-content: space-between;
+        top: unset;
+        right: 0;
+    }
+    .fa-twitter {
+        right: 155px;
+        bottom: 90px;
+        top: unset;
+    }
+    .fa-facebook {
+        right: 100px;
+        bottom: 90px;
+        top: unset;
+    }
+    /* #sh-button-container {
+        display: none;
+    }
+    #hide-action-container {
+        display: block;
+    } */
+    .blueprints {
+        left: 78px;
+        width: 70%;
+        bottom: 90px;
+        top: unset;
+    }
+    .blueprints img {
+        max-height: 170px;
+    }
+    #room {
+        right: 102px;
+        top: 76px;
+    }
+    #aisle {
+        right: 54px;
+        top: 94px;
+    }
+    #mainRoom {
+        right: 173px;
+        top: 111px;
+    }
+    #Kitchen {
+        right: 149px;
+        top: 70px;
+    }
+    #auxiliaryRoom {
+        right: 85px;
+        top: 140px;
+    }
+    .mobile-urbanization-image {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        height: unset;
+        background-color: white;
+        border-radius: 2px;
+        top: 10px;
+        left: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 5px;
+    }
+    .urbanization-information #title {
+        font-size: x-large;
+    }
+    .urbanization-information #subtitle {
+        font-size: xx-small;
+    }
+}

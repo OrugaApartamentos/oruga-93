@@ -1,0 +1,104 @@
+/* Messages */
+.message {
+    z-index: 2;
+    height: 20px;
+    visibility: hidden;
+    pointer-events: auto;
+    text-shadow: rgb(0 0 0) 1px 1px 4px;
+    transform-origin: 50% 50%;
+    transition: left 0s ease 0s, bottom 0s ease 0s;
+    display: none;
+    position: absolute;
+    color: white;
+    bottom: 0;
+    bottom: -26px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Show messages:hovers */
+#hide:hover #hideMessage {
+    visibility: inherit;
+    display: block;
+    left: 28px;
+    top: -20px;
+}
+#show:hover #showMessage {
+    visibility: inherit;
+    display: block;
+    left: 8px;
+    top: -20px;
+}
+#fullscreen:hover #fullscreenMessage {
+    visibility: inherit;
+    display: block;
+    top: -30px;
+    left: -36px;
+    width: max-content;
+}
+#play:hover #playMessage {
+    visibility: inherit;
+    display: block;
+    margin-left: -10px;
+    top: -20px;
+}
+#pause:hover #pauseMessage {
+    visibility: inherit;
+    display: block;
+    margin-left: -20px;
+    top: -20px;
+}
+#zoom-in:hover #zoomInMessage {
+    visibility: inherit;
+    display: block;
+    margin-left: -15px;
+    top: -30px;
+}
+#zoom-out:hover #zoomOutMessage {
+    visibility: inherit;
+    display: block;
+    margin-left: -15px;
+    top: -30px;
+}
+
+#whats-app-button:hover + #whats-app-message {
+    visibility: inherit;
+    color: white;
+    display: block;
+    width: fit-content;
+    bottom: -26px;
+    margin-left: -2px;
+}
+
+#blueprints-button:hover + #blueprints-message {
+    visibility: inherit;
+    color: white;
+    display: block;
+}
+#gallery-button:hover + #gallery-message {
+    visibility: inherit;
+    color: white;
+    display: block;
+}
+#information-button:hover + #information-message {
+    visibility: inherit;
+    color: white;
+    display: block;
+}
+#sh-button:hover + #share-message {
+    visibility: inherit;
+    color: white;
+    display: block;
+}
+#geolink-button:hover + #geolink-message {
+    visibility: inherit;
+    color: white;
+    display: block;
+    margin-left: -34px;
+    text-align: center;
+}
+#landing-button:hover + #oruga-message {
+    visibility: inherit;
+    color: white;
+    display: block;
+}
