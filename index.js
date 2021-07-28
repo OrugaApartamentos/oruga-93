@@ -658,7 +658,7 @@ function createViewer() {
     showControls: false,
     autoLoad: true,
     backgroundColor: [255, 255, 255],
-    hotSpotDebug: true
+    hotSpotDebug: DEVELOP
   });
   sceneSelected = viewer.getScene();
   viewerEvents();
