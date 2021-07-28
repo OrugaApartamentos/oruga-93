@@ -181,7 +181,7 @@ function createViewer() {
             createTooltipFunc: hotspot,
             createTooltipArgs: "Plano segundo piso",
             clickHandlerFunc: openImageModal,
-            clickHandlerArgs: './assets/gallery/planta-primer-piso.jpg'
+            clickHandlerArgs: './assets/gallery/planta-segundo-piso.jpg'
           },
           {
             yaw: 152.5,
