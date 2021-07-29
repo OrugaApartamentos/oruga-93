@@ -20,7 +20,9 @@
 
         function loadGalleryImages() {
             const lobbyImg = document.getElementById('lobby');
-            lobbyImg.src = 'assets/gallery/lobby.jpg';
+            if (lobbyImg) {
+                lobbyImg.src = 'assets/gallery/lobby.jpg';
+            }
         }
 
         function loadImage() {
@@ -286,7 +288,7 @@ PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8v
                     </ul>
                     <div class="carousel-inner bg-transparent" id="carousel-images">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" alt="Lobby" id="lobby">
+                            <img class="d-block w-100" alt="Lobby" id="lobby" src="assets/gallery/lobby.jpg">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#gallery-images" data-slide="prev">
