@@ -62,7 +62,7 @@
 .urbanization-information #subtitle {
     letter-spacing: 4px;
     font-size: x-small;
-    color: #379585;
+    color: var(--light);
     font-family: "Din-condensed-bold";
     line-height: 1;
 }
